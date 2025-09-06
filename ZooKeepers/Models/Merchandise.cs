@@ -1,0 +1,14 @@
+﻿namespace ZooKeepers.Models
+{
+    public class Merchandise
+    {
+        public int MerchandiseID { get; set; }
+        public string Name { get; set; }
+        public string Category { get; set; }
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
+        public string Description { get; set; }
+
+        public ICollection<OrderItem> OrderItems { get; set; }
+    }
+}
